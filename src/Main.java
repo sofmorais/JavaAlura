@@ -5,8 +5,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         String titular = "Jacqueline Oliveira";
-        String tipoConta = "Conta corrente";
-        double saldoInicial = 2500;
+        String tipoConta = "Corrente";
+
+        double saldoInicial = 2500.99;
         double saldoAtualizado = 0;
         double valorDigitado = 0;
 
@@ -15,40 +16,42 @@ public class Main {
         System.out.println("************************************");
         System.out.println("Nome: " + titular);
         System.out.println("Tipo conta: " + tipoConta);
-        System.out.println("Saldo inicial: R$" + saldoInicial);
+        System.out.printf("Saldo inicial: R$%.2f",  saldoInicial);
         System.out.println("************************************");
 
+        String menu = """
+                \nOperações
+                1. Consultar saldos
+                2. Receber valor
+                3. Transferir valor
+                4. Sair
+                """;
 
         while (opcao != 4) {
-            System.out.println("\nOperações: ");
-            System.out.println("1. Consultar saldos");
-            System.out.println("2. Receber valor");
-            System.out.println("3. Transferir valor");
-            System.out.println("4. Sair\n");
-
+            System.out.println(menu);
             System.out.println("Digite a opção desejada");
             opcao = sc.nextInt();
 
             if (opcao == 1) {
-                System.out.println("Saldo: " + saldoInicial);
+                System.out.printf("Saldo: R$%.2f", saldoInicial);
             } else if (opcao == 2) {
-                System.out.println("Informe o valor a receber: ");
+                System.out.println("Valor recebido: ");
 
                 valorDigitado = sc.nextDouble();
-                saldoAtualizado = saldoInicial + valorDigitado;
+                saldoAtualizado = saldoInicial += valorDigitado;
 
-                System.out.println("Saldo atualizado: " + saldoAtualizado);
+                System.out.printf("Saldo atualizado: R$%.2f", saldoAtualizado);
             } else if (opcao == 3) {
                 System.out.println("Informe o valor que deseja transferir: ");
                 valorDigitado = sc.nextDouble();
 
                 if (valorDigitado > saldoInicial) {
-                    System.out.println("Saldo insuficiente");
+                    System.out.println("Saldo insuficiente.");
                 } else {
-                    saldoAtualizado -= valorDigitado;
-                    System.out.println("Saldo atualizado: " + saldoAtualizado);
+                    saldoAtualizado = saldoInicial -= valorDigitado;
+                    System.out.printf("Saldo atualizado: R$%.2f", saldoAtualizado);
                 }
-            } else {
+            } else if (opcao != 4){
                 System.out.println("Opção inválida.");
             }
         }
