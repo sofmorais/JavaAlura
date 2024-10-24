@@ -1,4 +1,4 @@
-import screenmatch.Movie;
+import br.com.alura.screenmatch.model.Movie;
 
 public class Application {
     public static void main(String[] args) {
@@ -6,10 +6,12 @@ public class Application {
         movie.setNome("O Poderoso Chefão");
         movie.setAnoLancamento(1972);
 
+
         movie.avalia(8);
         movie.avalia(10);
         movie.avalia(5);
 
         System.out.println(movie.exibeFichaTecnica());
+
     }
 }

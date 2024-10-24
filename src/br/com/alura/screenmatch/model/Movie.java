@@ -1,4 +1,4 @@
-package screenmatch;
+package br.com.alura.screenmatch.model;
 
 import java.time.Year;
 import java.util.Locale;
@@ -40,8 +40,8 @@ public class Movie {
         }
     }
 
-    public double getAvaliacao() {
-        return avaliacao;
+    public int getTotalAvaliacoes(){
+        return totalAvaliacoes;
     }
 
     public Boolean isInclusoNoPlano() {
@@ -59,7 +59,7 @@ public class Movie {
                 "\nAno de Lançamento: " + anoLancamento +
                 "\nDuração: " + duracaoMinutos + " minutos" +
                 "\nNota: %.2f".formatted(retornaAvaliacaoGeral()) +
-                "\nTotal de Avaliações: " + totalAvaliacoes +
+                "\nTotal de Avaliações: " + getTotalAvaliacoes() +
                 "\nIncluso no Plano: " + inclusoNoPlano;
     }
 
