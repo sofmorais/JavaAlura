@@ -52,16 +52,15 @@ public class Movie {
         this.inclusoNoPlano = incluidoNoPlano;
     }
 
-    @Override
-    public String toString() {
+    public String exibeFichaTecnica() {
         Locale.setDefault(new Locale("en", "US"));
         return "Informações do filme\n" +
-                "Nome: " + nome +
-                ", \nAno de Lançamento: " + anoLancamento +
-                ", \nDuração: " + duracaoMinutos + " minutos" +
-                ", \nNota: %.2f".formatted(retornaAvaliacaoGeral()) +
-                ", \nTotal de Avaliações: " + totalAvaliacoes +
-                ", \nIncluso no Plano: " + inclusoNoPlano;
+                "\nNome: " + nome +
+                "\nAno de Lançamento: " + anoLancamento +
+                "\nDuração: " + duracaoMinutos + " minutos" +
+                "\nNota: %.2f".formatted(retornaAvaliacaoGeral()) +
+                "\nTotal de Avaliações: " + totalAvaliacoes +
+                "\nIncluso no Plano: " + inclusoNoPlano;
     }
 
     public void avalia(double nota) {

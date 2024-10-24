@@ -10,6 +10,6 @@ public class Application {
         movie.avalia(10);
         movie.avalia(5);
 
-        System.out.println(movie.toString());
+        System.out.println(movie.exibeFichaTecnica());
     }
 }
