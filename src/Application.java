@@ -1,3 +1,4 @@
+import br.com.alura.screenmatch.calculo.CalculadoraTempo;
 import br.com.alura.screenmatch.model.Movie;
 import br.com.alura.screenmatch.model.Serie;
 
@@ -24,5 +25,9 @@ public class Application {
 
         System.out.println(serieLost.exibeFichaTecnica());
         System.out.println("Tempo para maratonar a série " + serieLost.getNome() + " é de " + serieLost.getDuracaoMinutos() + " minutos");
+
+        CalculadoraTempo calculadoraTempo = new CalculadoraTempo();
+        calculadoraTempo.calcularTempo(movie);
+        System.out.println("O tempo total é: " + calculadoraTempo.getTempoTotal() + " minutos");
     }
 }

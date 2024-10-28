@@ -3,7 +3,6 @@ package exercicios.poo;
 import java.time.Year;
 
 public class Carro {
-
     // Crie uma classe Carro com atributos modelo, ano, cor e métodos para exibir a ficha técnica e calcular a idade do carro.
 
     private String modelo;

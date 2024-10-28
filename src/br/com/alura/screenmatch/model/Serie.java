@@ -14,7 +14,7 @@ public class Serie extends Title {
         this.temporadas = temporadas;
     }
 
-    public Boolean getAtiva() {
+    public Boolean isAtiva() {
         return ativa;
     }
 
