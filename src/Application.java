@@ -1,4 +1,6 @@
-import br.com.alura.screenmatch.calculo.CalculadoraTempo;
+import br.com.alura.screenmatch.utils.CalculadoraTempo;
+import br.com.alura.screenmatch.utils.FiltroRecomendacao;
+import br.com.alura.screenmatch.model.Episode;
 import br.com.alura.screenmatch.model.Movie;
 import br.com.alura.screenmatch.model.Serie;
 
@@ -29,5 +31,14 @@ public class Application {
         CalculadoraTempo calculadoraTempo = new CalculadoraTempo();
         calculadoraTempo.calcularTempo(movie);
         System.out.println("O tempo total é: " + calculadoraTempo.getTempoTotal() + " minutos");
+
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.filtra(movie);
+
+        Episode episodio = new Episode();
+        episodio.setNumero(1);
+        episodio.setSerie(serieLost);
+        episodio.setTotalVisualizacao(300);
+        filtro.filtra(episodio);
     }
 }
