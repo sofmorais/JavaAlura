@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch.model;
+package br.com.alura.screenmatch.musicapp.screenmatch.model;
 
 public class Serie extends Title {
     private int temporadas;

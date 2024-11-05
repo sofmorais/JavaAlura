@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch.utils;
+package br.com.alura.screenmatch.model.utils;
 
 import br.com.alura.screenmatch.model.Title;
 

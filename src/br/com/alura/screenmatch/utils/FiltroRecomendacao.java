@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch.utils;
+package br.com.alura.screenmatch.model.utils;
 
 public class FiltroRecomendacao {
     public void filtra(Classificacao classificacao){

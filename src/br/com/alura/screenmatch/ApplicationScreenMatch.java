@@ -4,7 +4,7 @@ import br.com.alura.screenmatch.model.Episode;
 import br.com.alura.screenmatch.model.Movie;
 import br.com.alura.screenmatch.model.Serie;
 
-public class Application {
+public class ApplicationScreenMatch {
     public static void main(String[] args) {
         Movie movie = new Movie();
         movie.setNome("O Poderoso Chefão");
