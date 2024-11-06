@@ -1,6 +1,6 @@
 package br.com.alura.screenmatch.model;
 
-import br.com.alura.screenmatch.utils.Classificacao;
+import br.com.alura.screenmatch.model.utils.Classificacao;
 
 public class Movie extends Title implements Classificacao {
     private String diretor;
