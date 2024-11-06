@@ -1,3 +1,5 @@
+package br.com.alura.musicsapp;
+
 import br.com.alura.musicsapp.model.Music;
 import br.com.alura.musicsapp.model.Podcast;
 import br.com.alura.musicsapp.model.Preference;

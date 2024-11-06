@@ -1,6 +1,6 @@
-package br.com.alura.screenmatch.musicapp.screenmatch.model;
+package br.com.alura.screenmatch.model;
 
-import br.com.alura.screenmatch.musicapp.screenmatch.model.utils.Classificacao;
+import br.com.alura.screenmatch.utils.Classificacao;
 
 public class Movie extends Title implements Classificacao {
     private String diretor;
