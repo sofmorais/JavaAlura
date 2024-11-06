@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch.musicapp.screenmatch.model;
+package br.com.alura.screenmatch.model;
 
 import java.time.Year;
 import java.util.Locale;
