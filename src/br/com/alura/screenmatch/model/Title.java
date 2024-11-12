@@ -3,7 +3,7 @@ package br.com.alura.screenmatch.model;
 import java.time.Year;
 import java.util.Locale;
 
-public class Title {
+public class Title implements Comparable<Title> {
     private String nome;
     private Year anoLancamento;
     private int duracaoMinutos;
@@ -76,4 +76,8 @@ public class Title {
         return avaliacao / totalAvaliacoes;
     }
 
+    @Override
+    public int compareTo(Title o) {
+        return this.getNome().compareTo(o.getNome());
+    }
 }

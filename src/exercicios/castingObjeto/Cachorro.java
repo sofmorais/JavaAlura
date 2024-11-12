@@ -16,4 +16,19 @@ public class Cachorro extends Animal {
         System.out.println("Au au");
     }
 
+    public static void main(String[] args) {
+        Cachorro cachorro = new Cachorro();
+        cachorro.setNome("Rex");
+
+        if (cachorro instanceof Animal) {
+            Animal animal = (Animal) cachorro;
+            System.out.println("Casting realizado com sucesso!");
+
+            System.out.println("Nome: " + cachorro.nome);
+            animal.fazerBarulho();
+        } else {
+            System.out.println("O objeto não é uma instância de Animal");
+        }
+    }
+
 }

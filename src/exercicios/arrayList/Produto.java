@@ -1,5 +1,6 @@
 package exercicios.arrayList;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 public class Produto {
@@ -60,10 +61,15 @@ public class Produto {
         System.out.println("Tamanho da lista de produtos: " + listaProdutos.size());
         System.out.println("Produto na posição 1: " + listaProdutos.get(1).getNome());
 
+        double somaPrecos = 0;
+
         System.out.println("Produtos na lista: ");
-        for (Produto produto : listaProdutos){
+        for (Produto produto : listaProdutos) {
             System.out.println(produto);
+            somaPrecos += produto.getPreco();
         }
 
+        double precoMedio = somaPrecos / listaProdutos.size();
+        System.out.printf("Preço médio dos produtos: R$%.2f", precoMedio);
     }
 }
