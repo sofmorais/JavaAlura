@@ -11,6 +11,11 @@ public class Title {
     private int totalAvaliacoes;
     private Boolean inclusoNoPlano;
 
+    public Title(String nome, Year anoLancamento) {
+        this.nome = nome;
+        this.anoLancamento = anoLancamento;
+    }
+
     public String getNome() {
         return nome;
     }
